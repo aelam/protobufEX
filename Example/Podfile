@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ProtobufEX_Example' do
+  pod 'ProtobufEX', :path => '../'
+
+  target 'ProtobufEX_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
