@@ -1,0 +1,6 @@
+framework module ProtobufEX {
+  umbrella header "ProtobufEX-umbrella.h"
+
+  export *
+  module * { export * }
+}

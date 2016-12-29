@@ -7,6 +7,7 @@
 //
 
 @import XCTest;
+@import ProtobufEX;
 
 @interface Tests : XCTestCase
 
@@ -28,7 +29,13 @@
 
 - (void)testExample
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    const UInt32 keys[10] = {0,2};
+    const BOOL values[2] = {YES, NO};
+
+    GPBUInt32BoolDictionary *dictionary2 = [[GPBUInt32BoolDictionary alloc] initWithBools:values forKeys:keys count:2];
+    
+    GPBUInt32BoolDictionary *dictionary = [GPBUInt32BoolDictionary dictionaryWithNSDictionary:@{@1:@YES}];
+    
 }
 
 @end

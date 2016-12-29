@@ -1,0 +1,20 @@
+PODS:
+  - Protobuf (3.1.0)
+  - ProtobufEX (0.1.0):
+    - Protobuf (~> 3.1.0)
+
+DEPENDENCIES:
+  - Protobuf (~> 3.1.0)
+  - ProtobufEX (from `../`)
+
+EXTERNAL SOURCES:
+  ProtobufEX:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Protobuf: 265e9977d04a83eba9cefb0bed3ad07e41033b4a
+  ProtobufEX: e0b50ad738fdfa74ae22bec829a99340aa1128ae
+
+PODFILE CHECKSUM: 928b2a586c022a8678a0776c000edc1f036c5bfa
+
+COCOAPODS: 1.2.0.beta.1
